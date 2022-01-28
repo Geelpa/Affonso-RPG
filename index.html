@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Affonso </title>
+
+</head>
+
+<body class="container-fluid bg-black" style="
+    background: fixed url(https://www.teahub.io/photos/full/131-1310893_abandoned-house-haunted-moonlight-night-trees-abandoned-house.jpg) no-repeat; 
+    background-size: cover;
+    ">
+    <header class="p-5 d-flex align-middle justify-content-center ">
+        <div class="back  mt-5 text-center" onclick="play()">
+            <i class="fas fa-volume-mute text-secondary"
+                style="font-size: 56px; text-decoration: none; cursor: pointer;" id="volumeOff"></i>
+
+            <i class="fas fa-volume-up text-light" style="font-size: 56px; display: none; cursor: pointer; text-decoration: none;"
+                id="volumeOn"></i>
+            <audio id="audio" src="./ost.mp3"></audio>
+        </div>
+    </header>
+
+    <main class="">
+        <div class="container text-light p-5 mt-5 bg-opacity-75 bg-dark rounded st-fade" id="bloco">
+            <h2 class="container text-center pt-4 st-fade" id="name">
+                Affonso Martins
+            </h2>
+            <div class="p-5 m-4" id="prólogo">
+                <h4 class="">Prólogo:</h4>
+                <h5 class="mt-4 text-justify">
+                    Um criativo explorador, amante das artes e da natureza, guiado pelos conceitos fortes de valorização
+                    da família e das amizades, Affonso nutre um circulo social muito saudável onde suas características
+                    de bravura e fidelidade ganham muito espaço. Sua mente destemida o permite experimentar o melhor da
+                    vida, aproveitando com presença e compreensão as quietudes da vida.
+
+                </h5>
+            </div>
+            <div class="p-5 m-5" id="parents">
+                <h4 class="mb-2">Parentes e familiares:</h4>
+                <h5 class="mt-4 mb-4 text-justify">
+                    <ul>
+                        <li class="mt-4"> Pai - Crescido no pantanal de Mato Grosso, Antônio realizava
+                            atividades
+                            tradicionais da
+                            região... Desde cedo o contato com animais como cavalos, vacas e touros o fez se tornar um
+                            exímio
+                            cavalgador e também laçador. Seu estilo /carpeal/ vestido com botas, cintas e chapéu de
+                            couro logo
+                            destacam-no dos demais. O olhar firme, a voz impotente e a postura erguida sugerem a
+                            seriedade que
+                            este homem carrega. Um árduo trabalhador da terra, das gigantes plantações de terras de sua
+                            família
+                            (os Martins).</li>
+                        <li class="mt-4"> Mãe - Diferente do pai, Carla - mãe de Affonso, era uma entusiasta por cinema.
+                            O que
+                            trouxe
+                            grandes influências no crescimento de seu filho. Sua paixão pelo cinema e outras artes era
+                            vigorosa.
+                            O reflexo disso se vê em Affonso, que muito é guiado pelo gosto artístico/musical de sua
+                            mãe. Os
+                            anos 80/90 impregnados em suas preferências se mostram um grande moldador de suas
+                            personalidades.</li>
+                        <li class="mt-4"> Demais - A família de Affonso é basicamente dividida em dois por conta da
+                            separação de
+                            seus pais.
+                            Dessa forma, é muito comum que cada um de seus pais o levem para pontos profundos da
+                            família,
+                            trazendo desde a raiz até o mais frequente. Visitar tio-avó de não sei quem é comum em seus
+                            passeis
+                            paternos. Enquanto rever as primas mais velhas de sua mãe também são do
+                            crescimento de Affonso.</li>
+                    </ul>
+                </h5>
+            </div>
+            <div class="p-5 m-5" id="behavior">
+                <h4 class="mb-2">Personalidade e comportamento:</h4>
+                <h5 class="mt-4 text-justify font-weight-light">
+                    <b>Apaixonado pelo desconhecido</b>, Affonso é um hábil explorador. Sua perspicácia desenvolvida no
+                    pantanal, junto ao entrosamento social desenvolvido pelas companhias de sua mãe, o tornaram o
+                    simbionte perfeito para o bom relacionamento individual e coletivo.
+                    Sua mente <b>criativa</b> e destemida o propõe desafios constantes, que o levam a grandes aventuras
+                    exploratórias. É fácil ver que sua mente está <b>questionando</b> os conventos sociais tanto quanto
+                    os novos ambientes geográficos.
+                    <br>
+                    <br>
+                    Sua admiração e inspiração pela natureza também é notável. Existem uma conexão entre os dois. O
+                    bem estar da exposição à ambientes selvagens, o céu aberto e a oportunidade de trilhar
+                    caminhos inexplorados, são eficazes meios de excitação para Affonso. O retorno dopamínico nesses
+                    momentos é o que faz a vida valer a pena para ele.
+                    <br>
+                    <br>
+                    Seu comportamento descontraído e calmo é parte do que o torna um excelente receptor. Sua
+                    compreensão, ganha através de suas grandiosas experiências, o tornaram um bom ouvinte e por
+                    consequência um ótimo locutor. A soma de um homem imponente com grande versatilidade em suas
+                    habilidades, somadas à uma oratória de respeito, o fazem um grande agregador nas suas rodas de
+                    convívio. As características de Affonso ganham grande celebridade em suas relações. É uma amizade
+                    fácil, fiel e forte. O comprometimento com os amigos e família é um ponto bem traçado na sua
+                    personalidade. O reflexo disso é sua vasta gama de grupos onde está inserido com grande frequência.
+
+                </h5>
+            </div>
+            <div class="p-5 m-5" id="look">
+                <h4 class="mb-2">Aparência e estilo:</h4>
+                <h5 class="mt-4 text-justify">
+                    <div class="container-fluid d-flex justify-content-center">
+                        <div class="m-4 w-25">
+                            <h5 class="mt-3">
+                                Cabelo: Peaky Blinder’s
+                            </h5>
+                            <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F24be0d75-6e7d-44b8-bbd8-967f3bf7493f%2FUntitled.png?table=block&id=43f78c88-9799-4862-a8c8-9e7bb8494eac&spaceId=45e3e8ab-b8a6-48c4-832c-7f7838dacb49&width=2000&userId=77e4edb7-5176-49d3-a440-afbbbbdd7f2b&cache=v2"
+                                class="w-75 mt-4">
+                            <h5 class="mt-5">
+                                Bigode: Long-curved
+                            </h5>
+                            <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcbc14ea6-4d8c-43a0-877e-665978aad9f7%2FUntitled.png?table=block&id=67d0d546-2046-4ccc-9677-1ab1413dd0a8&spaceId=45e3e8ab-b8a6-48c4-832c-7f7838dacb49&width=2000&userId=77e4edb7-5176-49d3-a440-afbbbbdd7f2b&cache=v2"
+                                class="w-75 mt-2">
+                        </div>
+                        <div class="col m-4">
+                            <h5 class="mt-3">
+                                Estilo:
+                            </h5>
+                            <h5 class="text-justify">
+                                Inspirado pelo estilo do pai, somado com a vasta inspirações de filmes Hollywoodianos,
+                                Affonso aparece comumente com roupas de cowboy.
+                                Cintos e fivelas aparentes, botas de couro e jeans clássica, muitas vezes acompanhada de
+                                um belo e chamativo chapéu:</h5>
+                                <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F96b9ad25-1e09-4554-a563-7cb39caeff0b%2FUntitled.png?table=block&id=0abb97c6-5a76-4f44-90eb-38e7d62c177b&spaceId=45e3e8ab-b8a6-48c4-832c-7f7838dacb49&width=2000&userId=77e4edb7-5176-49d3-a440-afbbbbdd7f2b&cache=v2"
+                                class="w-75 mt-2">
+
+                        </div>
+                        <div class="col m-4">
+                            <h5 class="mt-3">
+                                Altura e porte físico:
+                            </h5>
+                            <h5 class="mt-4 text-justify">Altura e porte físico: Por conta das atividades
+                                pantanenses, trabalhando nas terras e
+                                com os animais, o corpo de Affonso se desenvolveu um pouco acima da média. Sua robustez
+                                e ombros largos, junto a altura, o tornam mais adulto, visualmente, se comparado com os
+                                demais.</h5>
+                        </div>
+
+                    </div>
+
+                </h5>
+            </div>
+            <div class="p-5 m-5" id="fear">
+                <h4 class="mb-2">Medos e traumas:</h4>
+                <h5 class="mt-4 text-justify">
+                    Por crescer sempre rodeado de pessoas, principalmente seus pais, Affonso tem um desprendimento do
+                    que é a solidão. Essa fora uma condição onde ele nunca presenciou por muito tempo, o que o deixou
+                    desacostumado. O valor empregado ao coletivo, aos grupos em que frequenta, o fazem temer a perda de
+                    algo que ele valoriza tanto.
+                    Apesar de ser um desbravador, o temor de Affonso se dá ao considerar a perda daqueles em que os
+                    sentimentos estão depositados.
+
+                </h5>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid  mt-5 p-4">
+        <div class=" text-center p-5">
+            <a href="#name" class="col text-decoration-none text-white-50">
+                <h3>Inicio</h3>
+            </a>
+            <!-- <a href="#behavior" class="col text-decoration-none text-white-50">
+                <h4>Personalidade</h4>
+            </a>
+            <a href="#look" class="col text-decoration-none text-white-50">
+                <h4>Aparência</h4>
+            </a>
+            <a href="#fear" class="col text-decoration-none text-white-50">
+                <h4>Traumas</h4>
+            </a>
+            <a href="#name">
+                <h4 class=" text-decoration-none text-muted">Inicio</h4>
+            </a> -->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
